@@ -1,7 +1,9 @@
 # Fortinet-Home-Lab
+
 Enterprise IT home lab covering Windows Server/AD fundamentals (DNS, DHCP, GPO, file shares, account administration), Entra ID hybrid identity, Intune device management, and FortiGate networking/security. Built to demonstrate hands-on skills.
 
 ## Environment
+
 - **Host:** Windows 10, 32GB RAM, VirtualBox 7.2.6
 - **DC01** — Windows Server 2025, domain controller for `fortinetlab.local`
 - **FortiGate VM** — FortiOS v7.6.7, evaluation license
@@ -9,8 +11,12 @@ Enterprise IT home lab covering Windows Server/AD fundamentals (DNS, DHCP, GPO, 
 - **WIN10-UEFI-BITLOCKER** — separate VM built for BitLocker testing (UEFI + TPM 2.0)
 
 ## Phases
-**1. Domain Infrastructure Build** 
+
+**1. Domain Infrastructure Build**
 Installed Windows Server 2025, configured AD DS, DNS, and DHCP, and promoted the server to a Domain Controller for `fortinetlab.local`.
+
+**2. Windows Client Deployment**
+Deployed a Windows 10 client, verified DHCP/DNS, and joined it to the domain.
 
 **3. Active Directory Administration**
 Built out OU structure, created users and security groups, and practiced account lifecycle management (resets, disables, moves, unlocks).
@@ -47,3 +53,7 @@ Enrolled a domain-joined client into Intune, resolved OU/sync scoping issues, an
 
 **14. SSL Deep Inspection**
 Deployed FortiGate's SSL/SSH inspection profile with certificate distribution via Intune, and documented real licensing/architectural limitations.
+
+## Skills Demonstrated
+
+Windows Server administration, Active Directory & Group Policy, DNS/DHCP, SMB file services & NTFS permissions, Microsoft Entra ID, Microsoft Intune, FortiGate/FortiOS administration, PKI/certificate deployment, network security policy, and structured technical troubleshooting/documentation.
